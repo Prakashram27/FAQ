@@ -1,0 +1,220 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+- intent : handle_insult
+  examples: |
+    - you're a loser
+    - you are a stupid bot
+    - i hate you
+    - Stupid
+    - so dumb
+    - you are a moron
+    - you are an idiot
+    - are you brain dead?
+    - how can you be such an idiot?
+    - a baby knows more than you
+    - i hate your dumb face
+    - bloody dunce
+    - You're an idiot.
+    - You are a fool.
+    - You're foolish.
+    - You are dumb.
+    - You have no sense.
+    - You are unintelligent.
+    - You're a dolt.
+    - You're a dunce.
+    - You have no brains.
+    - You have no intelligence.
+    - You are an idiot.
+    - You lack intelligence.
+    - You are unknowing.
+    - You are shortsighted.
+    - Your intelligence is laughable.
+    - You know nothing.
+    - You lack understanding.
+    - Your mindset is naive.
+    - You brain is dull.
+    - you are dumb
+    - you're an idiot
+    - God you're a moron
+    - you're so dumb
+    - you are idiotic
+    - you're the most moronic person I know
+    - I can't believe how dumb you are
+    - you are unintelligent
+    - you're not smart
+    - you are so ignorant
+    - you are stupid
+    - you're dumb
+    - idiot
+    - are u dump?
+    - ok shut up
+
+- intent: corona
+  examples: |
+    - What is coronavirus?
+    - Can you explain what coronavirus is?
+    - I've been hearing about coronavirus. What exactly is it?
+    - What are coronaviruses, and how do they affect humans?
+    - Is coronavirus a serious illness?
+    - Are all coronaviruses the same, or do they vary in severity?
+    - How is COVID-19 related to the coronavirus?
+    - Is coronavirus the same as the flu?
+    - Can you tell me about the origin of the coronavirus?
+    - How did the coronavirus pandemic start?
+
+- intent: precautions
+  examples: | 
+    - How can i safe from corona?
+    - What are the essential precautions to avoid contracting COVID-19?
+    - How can I minimize the risk of COVID-19 transmission in my daily life?
+    - What steps should I take to safeguard myself and those around me from COVID-19?
+    - Are there specific guidelines I should follow to protect myself and others from COVID-19?
+    - What measures can I adopt to create a safer environment during the pandemic?
+    - How important is hand hygiene in preventing the spread of COVID-19?
+    - What types of face masks are recommended for protection against COVID-19?
+    - Can you provide some tips on maintaining physical distance to prevent COVID-19 transmission?
+    - What should I do if I come into contact with someone who has COVID-19?
+    - Are there any additional precautions I should take if I belong to a high-risk group for severe illness?
+
+- intent: spread
+  examples: |
+    - How does the coronavirus spread?
+    - Can I get infected by touching surfaces?
+    - Is the virus airborne?
+    - What are the modes of transmission of coronavirus?
+    - Can coronavirus spread through food?
+
+- intent: symptoms
+  examples: |
+    - What are the symptoms of COVID-19?
+    - How do I know if I have coronavirus?
+    - Are there any early signs of infection?
+    - Can coronavirus be asymptomatic?
+    - What should I do if I experience symptoms?
+
+- intent: treatments
+  examples: |
+    - What treatments are available for coronavirus?
+    - Are there any specific medications for COVID-19?
+    - How is coronavirus treated?
+    - Can you tell me about the treatment options for COVID-19?
+    - Are there any treatments available for coronavirus?
+    - Is there a cure for COVID-19?
+    - What medications are used to treat the virus?
+    - How can I boost my immune system to fight the virus?
+    - What should I avoid doing if I have coronavirus?
+
+- intent: government_reg
+  examples: |
+    - Do I need to register with the government if I have COVID-19 symptoms?
+    - Is there a process for government registration if I test positive for coronavirus?
+    - Should I report my positive COVID-19 test result to the local health authorities?
+    - What are the requirements for government registration in case of COVID-19?
+    - How do I inform the government about my COVID-19 status?
+
+- intent: hospital_visit
+  examples: |
+    - When should I consider going to the hospital for COVID-19?
+    - What are the signs that indicate I need to seek medical attention for coronavirus symptoms?
+    - At what point should I visit the hospital if I suspect I have contracted the virus?
+    - How do I know if my symptoms are severe enough to require hospitalization?
+    - What should I do if my COVID-19 symptoms worsen?
+    - Feel free to use these questions as examples or expand t
+
+- intent: pandamic
+  examples: |
+    - COVID-19 has been described as a “pandemic”. What does that mean?
+    - What is pandemic disease.
+    - how many peoples will affect for pandamic in general?
+    - pandamic

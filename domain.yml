@@ -1,0 +1,91 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - corona
+  - precautions
+  - spread
+  - symptoms
+  - treatments
+  - government_reg
+  - hospital_visit
+  - pandamic
+  - handle_insult
+# actions:
+#   - action_translate
+
+
+responses:
+  # utter_greet:
+  # - text: "Hey! How are you?"
+  utter_greet:
+  - condition:
+    - type: slot
+      name: langcode
+      value: de
+    text: "Hallo! Wie geht's dir?"
+  - condition:
+    - type: slot
+      name: langcode
+      value: en
+    text: "अरे! आप कैसे हैं?"
+  - condition:
+    - type: slot
+      name: langcode
+      value: hi
+    text: "Hello! Apa khabar?"
+  - text: "I'm sorry, I don't speak {langname}. Can you say that in a different language?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+
+
+  utter_corona:
+  - text: "Coronaviruses are a large family of viruses that can cause illness in animals and humans. In humans, they can lead to respiratory infections ranging from the common cold to more severe diseases such as COVID-19. COVID-19 is caused by the novel coronavirus SARS-CoV-2 and was first identified in late 2019 in Wuhan, China. It quickly spread to become a global pandemic, affecting millions of people worldwide. It's crucial to follow public health guidelines to protect yourself and others from this virus."
+
+  utter_precautions:
+  - text: "Wash your hands frequently with soap and water for at least 20 seconds, or use hand sanitizer with at least 60% alcohol. Wear a mask in public settings, especially when social distancing is challenging. Practice physical distancing by maintaining at least 6 feet (2 meters) of distance from others. Avoid large gatherings and crowded places. Stay home if you feel unwell or have symptoms of COVID-19."
+
+  utter_spread:
+  - text: "The coronavirus primarily spreads through respiratory droplets when an infected person coughs, sneezes, talks, or breathes. It can also spread by touching surfaces or objects contaminated with the virus and then touching your face, especially your mouth, nose, or eyes."
+  
+  utter_symptoms:
+  - text: "Common symptoms of COVID-19 include fever, cough, shortness of breath, fatigue, body aches, loss of taste or smell, sore throat, and headache. In severe cases, it can lead to pneumonia, acute respiratory distress syndrome (ARDS), and organ failure."
+
+  utter_treatments:
+  - text: "The treatment for COVID-19 varies depending on the severity of the symptoms. Mild cases can usually be managed with rest, fluids, and over-the-counter medications to relieve symptoms like fever and cough. For severe cases, medical intervention and hospitalization may be necessary. Antiviral drugs and other medications are used in some cases, but there is no specific cure for the virus. It's essential to follow the advice of healthcare professionals if you or someone you know is diagnosed with COVID-19."
+
+  utter_government_reg:
+  - text: "The requirements for government registration and reporting of COVID-19 cases may vary depending on your location and the local regulations. In some places, it might be mandatory to report positive cases to the government health authorities. It's essential to check the guidelines provided by your local health department or government website for specific instructions on registration and reporting of COVID-19 cases."
+
+  utter_hospital_visit:
+  - text: "If you suspect you have COVID-19 or experience severe symptoms, it's crucial to seek medical attention promptly. Emergency warning signs that require immediate medical attention include difficulty breathing, persistent chest pain or pressure, confusion, bluish lips or face, and inability to wake or stay awake. If you experience any of these symptoms or have underlying health conditions that put you at higher risk, do not hesitate to go to the nearest hospital or call for emergency medical services."
+
+  utter_pandamic:
+  - text: "The term 'pandemic' refers to the geographical spread of COVID-19, it is not an indication of the number of people who have been infected by the virus."
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
