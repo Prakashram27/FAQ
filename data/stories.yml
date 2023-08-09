@@ -28,7 +28,10 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
-
+- story: insulting path
+  steps:
+  - intent: handle_insult
+  - action: utter_handle_insult
 
 - story: corona_intro
   steps:

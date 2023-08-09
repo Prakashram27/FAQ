@@ -17,30 +17,14 @@ intents:
   - hospital_visit
   - pandamic
   - handle_insult
-# actions:
-#   - action_translate
-
-
+  - nlu_fallback
+  
 responses:
-  # utter_greet:
-  # - text: "Hey! How are you?"
   utter_greet:
-  - condition:
-    - type: slot
-      name: langcode
-      value: de
-    text: "Hallo! Wie geht's dir?"
-  - condition:
-    - type: slot
-      name: langcode
-      value: en
-    text: "अरे! आप कैसे हैं?"
-  - condition:
-    - type: slot
-      name: langcode
-      value: hi
-    text: "Hello! Apa khabar?"
-  - text: "I'm sorry, I don't speak {langname}. Can you say that in a different language?"
+  - text: "Hey! How are you?"
+
+  utter_handle_insult:
+  - text: "This is not a proper way of communication"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -58,14 +42,12 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
-
+  utter_please_rephrase:
+  - text: Sorry I didn't get that. Can you rephrase?
 
   utter_corona:
   - text: "Coronaviruses are a large family of viruses that can cause illness in animals and humans. In humans, they can lead to respiratory infections ranging from the common cold to more severe diseases such as COVID-19. COVID-19 is caused by the novel coronavirus SARS-CoV-2 and was first identified in late 2019 in Wuhan, China. It quickly spread to become a global pandemic, affecting millions of people worldwide. It's crucial to follow public health guidelines to protect yourself and others from this virus."
-
-  utter_precautions:
-  - text: "Wash your hands frequently with soap and water for at least 20 seconds, or use hand sanitizer with at least 60% alcohol. Wear a mask in public settings, especially when social distancing is challenging. Practice physical distancing by maintaining at least 6 feet (2 meters) of distance from others. Avoid large gatherings and crowded places. Stay home if you feel unwell or have symptoms of COVID-19."
-
+  
   utter_spread:
   - text: "The coronavirus primarily spreads through respiratory droplets when an infected person coughs, sneezes, talks, or breathes. It can also spread by touching surfaces or objects contaminated with the virus and then touching your face, especially your mouth, nose, or eyes."
   
@@ -84,7 +66,8 @@ responses:
   utter_pandamic:
   - text: "The term 'pandemic' refers to the geographical spread of COVID-19, it is not an indication of the number of people who have been infected by the virus."
 
-
+  utter_precautions:
+  - text: "Sample Precautions"
 
 session_config:
   session_expiration_time: 60

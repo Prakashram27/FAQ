@@ -49,32 +49,55 @@
 
 
 
-from typing import Any, Dict, List, Text
+# from typing import Any, Dict, List, Text
 
-from iso639 import languages
-from rasa_sdk import Action, Tracker
-from rasa_sdk.events import SlotSet
-from rasa_sdk.executor import CollectingDispatcher
-from textblob import TextBlob
+# from iso639 import languages
+# from rasa_sdk import Action, Tracker
+# from rasa_sdk.events import SlotSet
+# from rasa_sdk.executor import CollectingDispatcher
+# from textblob import TextBlob
 
 
-class ActionDetectLanguage(Action):
-    def name(self) -> Text:
-        return "action_detect_language"
+# class ActionDetectLanguage(Action):
+#     def name(self) -> Text:
+#         return "action_detect_language"
 
-    def run(
-        self,
-        dispatcher: CollectingDispatcher,
-        tracker: Tracker,
-        domain: Dict[Text, Any],
-    ) -> List[Dict[Text, Any]]:
+#     def run(
+#         self,
+#         dispatcher: CollectingDispatcher,
+#         tracker: Tracker,
+#         domain: Dict[Text, Any],
+#     ) -> List[Dict[Text, Any]]:
 
-        text = tracker.latest_message.get("text")
+#         text = tracker.latest_message.get("text")
 
-        langcode = TextBlob(text).detect_language()
+#         langcode = TextBlob(text).detect_language()
 
-        langname = languages.get(alpha2=langcode).name
-        langname = langname if "(" not in langname else langname.split(" ")[0]
+#         langname = languages.get(alpha2=langcode).name
+#         langname = langname if "(" not in langname else langname.split(" ")[0]
 
-        return [SlotSet("langcode", langcode), SlotSet("langname", langname)]
+#         return [SlotSet("langcode", langcode), SlotSet("langname", langname)]
 
+# from typing import Any, Text, Dict, List
+
+# from rasa_sdk import Action, Tracker
+# from rasa_sdk.events import UserUtteranceReverted
+# from rasa_sdk.executor import CollectingDispatcher
+
+# class ActionDefaultFallback(Action):
+#     """Executes the fallback action and goes back to the previous state
+#     of the dialogue"""
+
+#     def name(self) -> Text:
+#         return 'action_default_fallback'
+
+#     async def run(
+#         self,
+#         dispatcher: CollectingDispatcher,
+#         tracker: Tracker,
+#         domain: Dict[Text, Any],
+#     ) -> List[Dict[Text, Any]]:
+#         dispatcher.utter_message(template="action_default_fallback")
+
+#         # Revert user message which led to fallback.
+#         return [UserUtteranceReverted()]

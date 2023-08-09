@@ -142,6 +142,14 @@ nlu:
 
 - intent: corona
   examples: |
+    - how corona started?
+    - SARS
+    - corna
+    - corono
+    - where is corona
+    - kovid 19
+    - covid 19
+    - who is corona?
     - What is coronavirus?
     - Can you explain what coronavirus is?
     - I've been hearing about coronavirus. What exactly is it?
@@ -155,6 +163,12 @@ nlu:
 
 - intent: precautions
   examples: | 
+    - can i prevent from it?
+    - what is precaution?
+    - precaution
+    - how to minimize the risk
+    - how i can escape from corona
+    - how to avoid corona
     - How can i safe from corona?
     - What are the essential precautions to avoid contracting COVID-19?
     - How can I minimize the risk of COVID-19 transmission in my daily life?
