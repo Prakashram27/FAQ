@@ -10,12 +10,13 @@ RUN apt-get update \
         vim
 
 
-RUN pip install -r requirements.txt
+COPY requirements.txt /app/requirements.txt
 WORKDIR /app
 
 # upgrade pip version
 RUN pip install --no-cache-dir --upgrade pip
 
+RUN pip install -r requirements.txt
 RUN pip install rasa
 
 ADD config.yml config.yml
