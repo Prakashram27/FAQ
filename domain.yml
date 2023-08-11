@@ -2,13 +2,13 @@ version: "3.1"
 
 intents:
   - greet
+  - asking_greet
   - goodbye
   - affirm
   - deny
-  - mood_great
-  - mood_unhappy
   - bot_challenge
   - corona
+  - corona_testing
   - precautions
   - spread
   - symptoms
@@ -16,37 +16,54 @@ intents:
   - government_reg
   - hospital_visit
   - pandamic
+  - vaccination
+  - corona_cases
   - handle_insult
   - nlu_fallback
   
+actions:
+  - action_corona_cases
+  - action_session_id
+  # - action_save_conversation
+
+  
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hello! I'm your COVID-19 bot. How can I assist you today? If you have any questions about COVID-19 symptoms, prevention measures, testing, or vaccination, feel free to ask."
+  - text: "Hello there! Welcome to the COVID-19 information center. If you have any concerns about COVID-19, whether it's about symptoms, Diagnosis,Treatment, statistics, or else, feel free to ask. I'm here to help!"
+
+  utter_asking_greet:
+  - text: "Hello! Thank you for asking. I m just a computer program, so I don't have feelings, but I'm here and ready to assist you!"
+  - text: "Hello! Thank you for asking. I m a virtual assistant, so I don't have emotions, but I'm here to provide information and support."
+  - text: "Thank you for asking. I don't have personal experiences, but I'm here and fully operational for any questions you have."
 
   utter_handle_insult:
-  - text: "This is not a proper way of communication"
+  - text: "I'm here to provide assistance and information in a positive and helpful manner. If you have any questions or need support related to corona, feel free to ask. Let's keep our conversation focused on the topic at hand. Thank you!"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_okay:
+  - text: "Great, Let me know if any other queries"
 
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
+  utter_asking_question:
+  - text: "Please let me know about the query"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "It's been a pleasure assisting you. As you continue your journey, remember that knowledge is a compass that guides us. Take care, keep learning, and goodbye!"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "Greetings! I'm an AI-powered bot created using the Rasa framework. I'm here to help answer your corona related questions, provide information, and assist. Feel free to ask you'd like to know, and I'll do my best to assist you!"
+  - text: "Hello! Just to let you know, I'm a bot powered by Rasa's technology. My purpose is to make interactions informative. If you have inquiries or need assistance about Corona, don't hesitate to ask."
+  # - text: "Hey there! It's me, a bot powered by Rasa. I'm designed to assist you by providing accurate information and addressing your corona related queries. Feel free to engage with me"
+  # - text: "Hello, human friend! Well, maybe not human, but a bot with the power of Rasa! I'm here to share knowledge and assist you in any way I can. What can I do for you today?"
+  - text: "Greetings, fellow traveler of the digital realm! I'm an AI bot, proudly powered by Rasa. I'm at your service for answering questions and guiding you on your corona related quest for information. How can I aid you today?"
 
   utter_please_rephrase:
-  - text: Sorry I didn't get that. Can you rephrase?
+  - text: "I'm sorry, but I couldn't quite understand your question. Could you please rephrase it or provide more context? I'm here to assist you, so feel free to ask about Corona virus within my knowledge."
 
   utter_corona:
   - text: "Coronaviruses are a large family of viruses that can cause illness in animals and humans. In humans, they can lead to respiratory infections ranging from the common cold to more severe diseases such as COVID-19. COVID-19 is caused by the novel coronavirus SARS-CoV-2 and was first identified in late 2019 in Wuhan, China. It quickly spread to become a global pandemic, affecting millions of people worldwide. It's crucial to follow public health guidelines to protect yourself and others from this virus."
+  
+  utter_corona_testing:
+  - text: "Sure, I can help you with COVID-19 testing information. You can get a COVID-19 test at local testing centers, clinics, or hospitals. The testing process typically involves a swab taken from your nose or throat. There are different types of tests, including PCR and rapid antigen tests. Test result times can vary, but PCR tests generally take longer for results. Make sure to check with your local health authorities for testing locations and procedures in your area."
   
   utter_spread:
   - text: "The coronavirus primarily spreads through respiratory droplets when an infected person coughs, sneezes, talks, or breathes. It can also spread by touching surfaces or objects contaminated with the virus and then touching your face, especially your mouth, nose, or eyes."
@@ -67,7 +84,14 @@ responses:
   - text: "The term 'pandemic' refers to the geographical spread of COVID-19, it is not an indication of the number of people who have been infected by the virus."
 
   utter_precautions:
-  - text: "Sample Precautions"
+  - text: "Get vaccinated as soon as it’s your turn and follow local guidance on vaccination. Keep physical distance of at least 1 metre from others, even if they don’t appear to be sick. Avoid crowds and close contact. Wear a properly fitted mask when physical distancing is not possible and in poorly ventilated settings."
+
+  utter_out_of_scope:
+  - text: "I'm sorry, but I can only assist you with corona related questions. Is there something else I can help you with?"
+
+  utter_vaccination:
+  - text: "The COVID-19 vaccine is a critical tool in preventing the spread of the virus. It's designed to boost your immune response against the virus.You can find more information about the vaccine [here](https://www.cowin.gov.in/)"
+
 
 session_config:
   session_expiration_time: 60

@@ -5,28 +5,56 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
 
-- story: sad path 1
+# - story: sad path 1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   # - intent: mood_unhappy
+#   # - action: utter_cheer_up
+#   # - action: utter_did_that_help
+#   # - intent: affirm
+#   - action: utter_happy
+
+# - story: sad path 2
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   # - intent: mood_unhappy
+#   # - action: utter_cheer_up
+#   # - action: utter_did_that_help
+#   - intent: deny
+#   - action: utter_goodbye
+
+- story: if user say not ok
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
+  - intent: corona
+  - action: utter_corona
   - intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
+  - action: utter_okay
   - intent: deny
   - action: utter_goodbye
+
+- story: if user say not ok
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: corona
+  - action: utter_corona
+  - intent: affirm
+  - action: utter_okay
+  - intent: affirm
+  - action: utter_asking_question
+
+
+
+
+- story: greet path
+  steps:
+  - intent: asking_greet
+  - action: utter_asking_greet
 
 - story: insulting path
   steps:
@@ -42,7 +70,8 @@ stories:
   steps:
   - intent: precautions
   - action: utter_precautions
-
+  # - action: action_provide_info_with_buttons
+  
 - story: corona_spread
   steps:
   - intent: spread
@@ -72,4 +101,18 @@ stories:
   steps:
   - intent: pandamic
   - action: utter_pandamic
+
+- story: testing_corona
+  steps:
+  - intent: corona_testing
+  - action: utter_corona_testing
+
+- story: vaccine
+  steps:
+  - intent: vaccination
+  - action: utter_vaccination
   
+- story: out of the scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope

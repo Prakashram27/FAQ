@@ -6,6 +6,7 @@ nlu:
     - hey
     - hello
     - hi
+    - hey there
     - hello there
     - good morning
     - good evening
@@ -16,6 +17,37 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
+    - Hi, what's up?"
+    - Hey, ready to chat?
+    - Hello, are you available?
+    - Hello, can we talk?
+    - Hey, are you there?
+
+- intent: asking_greet
+  examples: |
+    - how are you?
+    - how was everything?
+    - how things going?
+    - how was the day?
+    - how are doing today?
+    - hey, how are you
+    - hello how are you
+    - how's it going?
+    - how have you been?
+    - what's new with you?
+    - how's your day?
+    - what's happening?
+    - how's life?
+    - how's your time been?
+    - how's your day been?
+    - how's everything on your end?
+    - how's your world?
+    - what's the latest?
+    - how's your existence?
+    - how's your virtual realm?
+    - what's the status on your side?
+    - how are things in your world?
+
 
 - intent: goodbye
   examples: |
@@ -29,15 +61,114 @@ nlu:
     - see you around
     - bye bye
     - see you later
+    - catch you later
+    - until next time
+    - take care
+    - farewell
+    - adios
+    - see you soon
+    - see you next time
+    - have a great day
+    - wishing you well
+    - farewell for now
+    - have a good one
+    - bye for now
+    - see you in a bit
+    - time to go
+    - signing off
+    - see you on the flip side
+    - stay well
+    - have a wonderful time
+    - off I go
+    - Thanks
 
 - intent: affirm
   examples: |
+    - gotit
+    - alright
+    - Okay
+    - ok
+    - fine
     - yes
     - y
     - indeed
     - of course
     - that sounds good
     - correct
+    - absolutely
+    - sure
+    - you got it
+    - no doubt
+    - affirmative
+    - definitely
+    - by all means
+    - affirmative
+    - without a doubt
+    - that's right
+    - absolutely correct
+    - of course, yes
+    - no problem
+    - okay
+    - agreed
+    - right on
+    - you bet
+    - unquestionably
+    - true
+    - exactly
+    - naturally
+    - naturally
+    - naturally
+    - for sure
+    - for sure
+    - naturally
+    - naturally
+    - most certainly
+    - most definitely
+    - positively
+    - positively
+    - positively
+    - surely
+    - assuredly
+    - undeniably
+    - undoubtedly
+    - indubitably
+    - without question
+    - without question
+    - undoubtedly
+    - undoubtedly
+    - absolutely
+    - absolutely
+    - definitely
+    - definitely
+    - certainly
+    - certainly
+    - unquestionably
+    - unquestionably
+    - by all means
+    - by all means
+    - without fail
+    - without fail
+    - naturally
+    - naturally
+    - certainly
+    - certainly
+    - naturally
+    - naturally
+    - definitely
+    - definitely
+    - naturally
+    - naturally
+    - definitely
+    - definitely
+    - you betcha
+    - you betcha
+    - you betcha
+    - exactly
+    - exactly
+    - without a doubt
+    - without a doubt
+
+
 
 - intent: deny
   examples: |
@@ -48,47 +179,150 @@ nlu:
     - don't like that
     - no way
     - not really
+    - not at all
+    - negative
+    - I disagree
+    - I can't agree
+    - that's not correct
+    - I'm not sure about that
+    - I beg to differ
+    - that's not accurate
+    - I have a different view
+    - I can't accept that
+    - I'm not on board with that
+    - I'm leaning towards no
+    - I don't agree
+    - count me out
+    - I'm not convinced
+    - it doesn't seem right
+    - I'm not feeling it
+    - I'm inclined to say no
+    - that's not my understanding
+    - I'm not in favor of that
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+# - intent: mood_great
+#   examples: |
+#     - perfect
+#     - great
+#     - amazing
+#     - feeling like a king
+#     - wonderful
+#     - I am feeling very good
+#     - I am great
+#     - I am amazing
+#     - I am going to save the world
+#     - super stoked
+#     - extremely good
+#     - so so perfect
+#     - so good
+#     - so perfect
+#     - fantastic
+#     - on top of the world
+#     - like a champ
+#     - couldn't be better
+#     - full of joy
+#     - exceptionally well
+#     - over the moon
+#     - in high spirits
+#     - absolutely fantastic
+#     - couldn't feel better
+#     - in a state of bliss
+#     - ecstatic
+#     - feeling marvelous
+#     - couldn't be happier
+#     - in a really good mood
+#     - riding the wave of happiness
+#     - unbelievably good
+#     - feeling superb
+#     - feeling like a million bucks
+#     - in an awesome mood
 
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+
+# - intent: mood_unhappy
+#   examples: |
+#     - my day was horrible
+#     - I am sad
+#     - I don't feel very well
+#     - I am disappointed
+#     - super sad
+#     - I'm so sad
+#     - sad
+#     - very sad
+#     - unhappy
+#     - not good
+#     - not very good
+#     - extremly sad
+#     - so saad
+#     - so sad
+#     - feeling down
+#     - had a terrible day
+#     - pretty upset
+#     - not in the best mood
+#     - feeling quite low
+#     - not doing well
+#     - quite disappointed
+#     - not feeling good at all
+#     - experiencing sadness
+#     - feeling really down
+#     - not the greatest day
+#     - feeling gloomy
+#     - quite unhappy
+#     - in a sad state
+#     - not feeling too great
+#     - feeling blue
+#     - a bit under the weather
+#     - not very happy
+#     - really bummed out
+#     - feeling really off
+
 
 - intent: bot_challenge
   examples: |
+    - who invented you
+    - who are you?
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+    - prove you're not a robot
+    - can bots talk like humans?
+    - is there a human behind this?
+    - tell me, are you an AI?
+    - is this a real person or a bot?
+    - can bots have conversations?
+    - are you AI or human?
+    - I'm curious, bot or human?
+    - can software really chat like a person?
+    - I'm guessing you're a bot, right?
+    - are we having a chat with a machine?
+    - is this just an automated response?
+    - how human-like can a bot be?
+    - are you capable of human-like conversations?
+    - is a machine generating these responses?
+    - can I get a human to talk to instead?
+    - let's see if you're a human or not
+    - are you a cleverly programmed AI?
+    - could you pass for a human in a conversation?
+    - who created you?
+    - tell me about your creators
+    - who is behind your development?
+    - explain your origins
+    - who built you?
+    - can you provide information about your developers?
+    - tell me about the team that created you
+    - who is responsible for your existence?
+    - describe the organization behind your creation
+    - who brought you into existence?
+    - what company is behind your development?
+    - tell me about the people who made you
+    - who is the mind behind your AI?
+    - explain the team that designed you
+    - who is the mastermind behind your creation?
+    - tell me about the inventors of your technology
+    - who are the geniuses behind your design?
+    - describe the individuals who developed you
+    - tell me about the creators of your AI model
+    - who is the driving force behind your existence?
 
 
 - intent : handle_insult
@@ -139,9 +373,82 @@ nlu:
     - idiot
     - are u dump?
     - ok shut up
+    - you're a loser
+    - you are a stupid bot
+    - i hate you
+    - Stupid
+    - so dumb
+    - you are a moron
+    - you are an idiot
+    - are you brain dead?
+    - how can you be such an idiot?
+    - a baby knows more than you
+    - i hate your dumb face
+    - bloody dunce
+    - You're an idiot.
+    - You are a fool.
+    - You're foolish.
+    - You are dumb.
+    - You have no sense.
+    - You are unintelligent.
+    - You're a dolt.
+    - You're a dunce.
+    - You have no brains.
+    - You have no intelligence.
+    - You are an idiot.
+    - You lack intelligence.
+    - You are unknowing.
+    - You are shortsighted.
+    - Your intelligence is laughable.
+    - You know nothing.
+    - You lack understanding.
+    - Your mindset is naive.
+    - You brain is dull.
+    - you are dumb
+    - you're an idiot
+    - God you're a moron
+    - you're so dumb
+    - you are idiotic
+    - you're the most moronic person I know
+    - I can't believe how dumb you are
+    - you are unintelligent
+    - you're not smart
+    - you are so ignorant
+    - you are stupid
+    - you're dumb
+    - idiot
+    - are u dump?
+    - ok shut up
+    - fuck
+    - Are you kidding me? That's fucking ridiculous.
+    - You're a fucking idiot.
+    - This is bullsh*t.
+    - Go fuck yourself.
+    - What a stupid response!
+    - I can't believe you're saying this.
+    - You're not making any sense.
+    - Your answer is garbage.
+    - Is this a joke?
+    - You're worthless.
+    - You're so annoying.
+    - Your service is terrible.
+    - This is a waste of time.
+    - I'm done talking to you.
+    - bitch
+    - Bugger off
+    - Bloody hell
+    - Bastard
+    - Wanker
+    - tosser
+    - Bollocks
+    - Motherfucker
+    - Son of a bitch
+    - Asshole
+
 
 - intent: corona
   examples: |
+    - I want to know about corona virus
     - how corona started?
     - SARS
     - corna
@@ -160,9 +467,32 @@ nlu:
     - Is coronavirus the same as the flu?
     - Can you tell me about the origin of the coronavirus?
     - How did the coronavirus pandemic start?
+    - where did COVID-19 come from?
+    - tell me about the origins of COVID-19
+    - how did the pandemic begin?
+    - explain the COVID-19 outbreak
+    - what's the history of the coronavirus?
+    - is COVID-19 a virus or a bacteria?
+    - what's the difference between COVID-19 and other coronaviruses?
+    - what are the symptoms of COVID-19?
+    - can you explain the transmission of COVID-19?
+    - what precautions should I take to avoid COVID-19?
+    - tell me about COVID-19 vaccines
+    - what's the current state of COVID-19 globally?
+    - give me an update on the coronavirus situation
+    - explain the mutations of the coronavirus
+    - are there new variants of COVID-19?
+    - can you clarify COVID-19 testing methods?
+    - how can I protect myself from the coronavirus?
+    - is it safe to travel during the pandemic?
+    - what's the impact of COVID-19 on the economy?
+    - what's the role of masks in preventing COVID-19?
+
 
 - intent: precautions
   examples: | 
+    - I want to know about corona virus precautions
+    - precausions
     - can i prevent from it?
     - what is precaution?
     - precaution
@@ -180,25 +510,100 @@ nlu:
     - Can you provide some tips on maintaining physical distance to prevent COVID-19 transmission?
     - What should I do if I come into contact with someone who has COVID-19?
     - Are there any additional precautions I should take if I belong to a high-risk group for severe illness?
+    - how can I protect myself from COVID-19?
+    - what measures should I take to avoid COVID-19?
+    - tell me about COVID-19 precautions
+    - what are the guidelines for staying safe from COVID-19?
+    - how can I minimize my risk of contracting COVID-19?
+    - explain the preventive measures for COVID-19
+    - what steps can I take to stay safe during the pandemic?
+    - are there any specific precautions against COVID-19?
+    - tell me about safety measures against COVID-19
+    - how important is mask-wearing in preventing COVID-19?
+    - what's the role of social distancing in avoiding COVID-19?
+    - can you provide some tips for maintaining good hygiene during the pandemic?
+    - explain the concept of self-isolation to prevent COVID-19 spread
+    - what should I do if I start experiencing COVID-19 symptoms?
+    - tell me about contact tracing and its role in COVID-19 prevention
+    - how can I protect vulnerable family members from COVID-19?
+    - what's the significance of vaccination as a precaution against COVID-19?
+    - should I avoid travel to stay safe from COVID-19?
+    - can you elaborate on quarantine as a preventive measure for COVID-19?
 
 - intent: spread
   examples: |
+    - I want to know how corona spreads
     - How does the coronavirus spread?
     - Can I get infected by touching surfaces?
     - Is the virus airborne?
     - What are the modes of transmission of coronavirus?
     - Can coronavirus spread through food?
+    - tell me about COVID-19 transmission
+    - how does the virus spread from person to person?
+    - explain the ways coronavirus can be transmitted
+    - is COVID-19 primarily spread through respiratory droplets?
+    - can I contract the virus from contaminated surfaces?
+    - tell me about the airborne transmission of COVID-19
+    - how long can the virus survive on surfaces?
+    - explain the role of close contact in COVID-19 spread
+    - what's the risk of getting COVID-19 from respiratory droplets?
+    - can the virus spread from asymptomatic carriers?
+    - is it safe to handle packages and deliveries?
+    - tell me about the role of aerosols in COVID-19 transmission
+    - explain the concept of fomite transmission
+    - what's the likelihood of getting COVID-19 outdoors?
+    - can pets transmit the coronavirus to humans?
+    - tell me about the role of respiratory hygiene in preventing COVID-19 spread
+    - how does the virus spread in crowded places?
+    - what are the chances of getting COVID-19 in indoor environments?
+    - explain the concept of super-spreading events
+    - can COVID-19 spread through water, like in swimming pools?
+
+- intent: corona_testing
+  examples: | 
+    - How can I get a COVID-19 test?
+    - Where can I get tested for coronavirus?
+    - What is the process for COVID-19 testing?
+    - Can you tell me about coronavirus testing locations?
+    - How long does it take to get COVID-19 test results?
+    - What types of COVID-19 tests are available?
 
 - intent: symptoms
   examples: |
+    - I want to know what is corona symptoms
+    - what are the possible symptoms of corona virus
+    - what is symtomps of coronavirus
     - What are the symptoms of COVID-19?
     - How do I know if I have coronavirus?
     - Are there any early signs of infection?
     - Can coronavirus be asymptomatic?
     - What should I do if I experience symptoms?
+    - tell me about COVID-19 symptoms
+    - explain the possible signs of coronavirus infection
+    - what are the typical symptoms of COVID-19?
+    - how can I recognize if I have coronavirus?
+    - describe the symptoms of the coronavirus
+    - are there any early indications of COVID-19?
+    - can you elaborate on the common COVID-19 symptoms?
+    - tell me about the range of symptoms for coronavirus
+    - is it possible to have COVID-19 without any symptoms?
+    - what's the difference between COVID-19 symptoms and flu symptoms?
+    - explain the concept of asymptomatic COVID-19 cases
+    - what steps should I take if I develop symptoms of COVID-19?
+    - how soon do symptoms of COVID-19 usually appear after exposure?
+    - describe the severity of symptoms in COVID-19 cases
+    - can you tell me about the less common symptoms of COVID-19?
+    - what should I do if I experience mild COVID-19 symptoms?
+    - explain the significance of loss of taste and smell as COVID-19 symptoms
+    - are there any age-specific differences in COVID-19 symptoms?
+    - tell me about the duration of COVID-19 symptoms
+    - can you provide insights into long-term COVID-19 symptoms?
+
 
 - intent: treatments
   examples: |
+    - I want to know treatment of covid-19
+    - what is treatment for covid-19?
     - What treatments are available for coronavirus?
     - Are there any specific medications for COVID-19?
     - How is coronavirus treated?
@@ -208,27 +613,350 @@ nlu:
     - What medications are used to treat the virus?
     - How can I boost my immune system to fight the virus?
     - What should I avoid doing if I have coronavirus?
+    - explain the treatment options for COVID-19
+    - tell me about the available therapies for coronavirus
+    - what are the current approaches to treating COVID-19?
+    - describe the medications used to manage COVID-19 symptoms
+    - can you provide insights into antiviral treatments for coronavirus?
+    - explain the role of oxygen therapy in COVID-19 treatment
+    - are there any specific drugs approved for COVID-19 treatment?
+    - tell me about the use of steroids in managing COVID-19
+    - is there a cure for COVID-19 or just supportive care?
+    - describe the importance of early medical intervention for COVID-19
+    - can you provide information on plasma therapy for COVID-19?
+    - explain the concept of monoclonal antibody therapy for coronavirus
+    - what's the role of vaccines in preventing severe COVID-19 cases?
+    - tell me about the importance of rest and hydration during COVID-19
+    - are there any dietary recommendations for COVID-19 patients?
+    - describe the precautions someone with COVID-19 should take at home
+    - tell me about the self-isolation period for COVID-19 patients
+    - explain the use of ventilators in severe COVID-19 cases
+    - are there any experimental treatments being explored for COVID-19?
+    - tell me about the role of traditional medicine in COVID-19 treatment
+
 
 - intent: government_reg
   examples: |
+    - I want to know government registration.
     - Do I need to register with the government if I have COVID-19 symptoms?
     - Is there a process for government registration if I test positive for coronavirus?
     - Should I report my positive COVID-19 test result to the local health authorities?
     - What are the requirements for government registration in case of COVID-19?
     - How do I inform the government about my COVID-19 status?
+    - tell me about government registration for COVID-19 cases
+    - is it mandatory to report COVID-19 symptoms to the government?
+    - explain the process of informing the government about COVID-19 status
+    - how do I notify the government if I'm diagnosed with COVID-19?
+    - what's the procedure for government registration if I have coronavirus?
+    - should I inform local health authorities if I test positive for COVID-19?
+    - tell me about the steps to take after testing positive for COVID-19
+    - is there a requirement to register with the government if I have COVID-19?
+    - can you explain the role of government tracking in COVID-19 cases?
+    - how can I ensure accurate government reporting for COVID-19?
+    - describe the importance of government registration in COVID-19 management
+    - what information do I need to provide for government registration due to COVID-19?
+    - tell me about the privacy concerns related to government registration for COVID-19
+    - explain the benefits of government tracking and reporting for COVID-19 cases
+    - are there any penalties for not registering with the government for COVID-19?
+    - what's the timeline for government notification in case of a positive test?
+    - tell me about the role of contact tracing in government registration for COVID-19
+    - how does government registration contribute to COVID-19 containment efforts?
+    - can you provide insights into the accuracy of government COVID-19 databases?
+    - explain the process of government monitoring for COVID-19 cases
 
 - intent: hospital_visit
   examples: |
+    - I want to know when i should admit in hospital
     - When should I consider going to the hospital for COVID-19?
     - What are the signs that indicate I need to seek medical attention for coronavirus symptoms?
     - At what point should I visit the hospital if I suspect I have contracted the virus?
     - How do I know if my symptoms are severe enough to require hospitalization?
     - What should I do if my COVID-19 symptoms worsen?
     - Feel free to use these questions as examples or expand t
+    - tell me when I should go to the hospital for COVID-19
+    - explain the indications for seeking hospital care with COVID-19 symptoms
+    - at what stage should I consider hospitalization for coronavirus?
+    - how do I determine if my COVID-19 symptoms require hospital attention?
+    - describe the signs of severe COVID-19 that warrant a hospital visit
+    - can you provide guidance on when to seek medical help for coronavirus symptoms?
+    - tell me about the criteria for hospitalization due to COVID-19
+    - what should I do if my COVID-19 condition deteriorates?
+    - explain the steps to take if my COVID-19 symptoms become worse
+    - how can I identify if my COVID-19 symptoms are getting severe?
+    - what's the threshold for deciding to go to the hospital for COVID-19?
+    - tell me about the role of medical professionals in assessing COVID-19 severity
+    - explain the importance of timely hospital visits for COVID-19 cases
+    - what's the difference between mild and severe COVID-19 symptoms?
+    - can you provide insights into oxygen levels and hospitalization decisions?
+    - tell me about the role of telemedicine in determining hospital visits for COVID-19
+    - how do I decide between home care and hospital care for COVID-19?
+    - explain the significance of monitoring symptoms for hospitalization decisions
+    - describe the common complications that require hospital attention in COVID-19
+    - what's the role of pre-existing conditions in hospitalization for COVID-19?
+
 
 - intent: pandamic
   examples: |
+    - I want to know what is pandamic
     - COVID-19 has been described as a “pandemic”. What does that mean?
     - What is pandemic disease.
     - how many peoples will affect for pandamic in general?
     - pandamic
+    - explain the concept of a pandemic like COVID-19
+    - tell me about the meaning of the term "pandemic"
+    - what constitutes a disease being labeled as a pandemic?
+    - describe the characteristics of a pandemic disease
+    - what's the difference between an epidemic and a pandemic?
+    - explain how COVID-19 qualifies as a pandemic
+    - tell me about the global impact of pandemic diseases
+    - can you provide insights into the spread of a pandemic disease?
+    - what's the historical context of pandemics throughout history?
+    - tell me about the factors that contribute to a pandemic's severity
+    - explain the role of international health organizations during a pandemic
+    - describe the measures taken to control a pandemic's spread
+    - what's the significance of containment strategies during a pandemic?
+    - tell me about the economic implications of a pandemic
+    - how does government response affect the course of a pandemic?
+    - explain the importance of public awareness during a pandemic
+    - can you provide examples of other pandemics in history?
+    - tell me about the stages of a pandemic's progression
+    - describe the challenges in managing a global pandemic
+    - what are the lessons learned from previous pandemics?
+
+
+- intent: corona_cases
+  examples: |  
+    - I want to know corona cases.
+    - What are the current COVID-19 statistics?
+    - Can you provide me with the latest coronavirus updates?
+    - How many new COVID-19 cases were reported today?
+    - Tell me about the total number of COVID-19 cases.
+    - What's the current global COVID-19 situation?
+    - How many people have been affected by the coronavirus so far?
+    - Any updates on COVID-19 cases in my country?
+    - What's the status of COVID-19?
+    - Give me the latest information about coronavirus infections.
+    - What's the daily increase in COVID-19 cases?
+    - tell me the current COVID-19 statistics
+    - provide me with the most recent coronavirus updates
+    - what's the number of new COVID-19 cases today?
+    - share the total count of COVID-19 cases
+    - what's the global situation with COVID-19?
+    - how many individuals have been impacted by the coronavirus thus far?
+    - do you have any updates on COVID-19 cases in my country?
+    - what's the current status of COVID-19?
+    - give me the latest data on coronavirus infections
+    - what's the daily rise in COVID-19 cases?
+    - can you provide insights into the current COVID-19 infection rates?
+    - tell me about the total recovered cases from COVID-19
+    - how many COVID-19 tests have been conducted worldwide?
+    - what's the mortality rate for COVID-19?
+    - provide information about COVID-19 cases in specific regions
+    - what's the trend in COVID-19 cases over the past week?
+    - share the latest COVID-19 data for my city
+    - tell me about the impact of vaccination on COVID-19 cases
+    - explain the concept of active COVID-19 cases
+    - describe the efforts to track and report COVID-19 statistics
+
+# - intent: ask__session_id
+#   examples: |  
+#     - I want to know my conversation Id
+#     - tell me the conversation id
+#     - what is my session id
+#     - can you share the conversation ID with me?
+#     - what's the unique identifier for this conversation?
+#     - tell me the session ID of our chat
+#     - provide me with the current session ID
+#     - what's the ID of our ongoing conversation?
+#     - can you show me the conversation identifier?
+#     - tell me about the session ID for this chat
+#     - what's the unique ID for our chat interaction?
+#     - give me the conversation ID, please
+#     - provide the session identifier for our conversation
+#     - what's the ID assigned to this chat session?
+#     - share the session ID associated with our conversation
+#     - tell me the identifier for our current chat session
+#     - can you provide the conversation ID for this session?
+#     - what's the session ID for our ongoing conversation?
+#     - give me the unique ID for our chat interaction
+#     - tell me the session ID that's being used now
+#     - provide me with the current conversation's ID
+#     - what's the unique identifier for our chat?
+#     - share the session ID that's in use for this conversation
+
+- intent: vaccination
+  examples: |
+    - Tell me more about the COVID-19 vaccine.
+    - When can I get the vaccine?
+    - Is the vaccine safe?
+    - How do I book a vaccine appointment?
+    - Are there different types of COVID-19 vaccines?
+    - What are the side effects of the COVID-19 vaccine?
+    - Where can I find a vaccination center near me?
+    - Can I choose which COVID-19 vaccine to receive?
+    - What's the recommended age to get vaccinated?
+    - Are booster shots available for COVID-19?
+    - How many doses of the vaccine do I need?
+    - Tell me about the efficacy of the different vaccines.
+    - What documents do I need to bring for my vaccine appointment?
+    - Can I still get the vaccine if I have allergies?
+    - Do I need to pay for the COVID-19 vaccine?
+    - Are there any restrictions after getting vaccinated?
+    - What's the difference between emergency use and full approval of a vaccine?
+    - How long does immunity last after getting vaccinated?
+    - What's the timeline for receiving both vaccine doses?
+    - What should I do if I miss my second vaccine dose?
+
+- intent: out_of_scope
+  examples: | 
+    - you are telling wrong
+    - swiggy
+    - zomato order
+    - food order
+    - wheather
+    - what is a weather today
+    - what is a temparature today?
+    - temparature
+    - Can you place a food order for me?
+    - I'm hungry. Can you help me order food?
+    - What's the weather like today?
+    - Can you tell me today's temperature?
+    - I'm curious about the current temperature. Can you provide that information?
+    - What's the temperature going to be today?
+    - Is it possible to order some food through you?
+    - How's the weather today?
+    - I want to order something to eat.
+    - Could you give me an update on the weather?
+    - What's the temperature forecast for today?
+    - Food delivery, please?
+    - What's the current temperature outside?
+    - Is it possible to order food using your service?
+    - Can you provide me with today's weather forecast?
+    - I'm thinking about ordering food. Can you assist?
+    - abcde
+    - hijkg
+    - lmopq
+    - rstde
+    - bcdef
+    - jnsduob
+    - ubidoni
+    - duinweui
+    - ubefei
+    - hfbwei
+    - ejfnweon
+    - wejkfnwe
+    - wejfbweofn
+    - wabdihbe
+    - efjnefkna
+    - enbfuiebf
+    - wdeofbqeon
+    - what
+    - who
+    - when
+    - where
+    - how
+    - is 
+    - was 
+    - that
+    - bike
+    - car
+    - flight
+    - travel
+    - book order 
+    - book a room 
+    - how was office today
+    - are you went to temple
+    - Do you have a girlfriend?
+    - Do you have a boyfriend?
+    - how was your family?
+    - how was your lover?
+    - how was you husband?
+    - how is your wife?
+    - how is your girlfriend?
+    - how is your boyfriend?
+    - Can you help me with my math homework?
+    - Tell me a joke.
+    - What's the weather like today?
+    - I need a recipe for chocolate cake.
+    - How do I fix my computer?
+    - Explain the theory of relativity.
+    - Can you recommend a good book to read?
+    - What's the capital of France?
+    - I'm lost, can you give me directions?
+    - What's the latest news in technology?
+    - Teach me how to play the piano.
+    - Can you help me choose a birthday gift?
+    - What's the best way to learn a new language?
+    - Tell me a fun fact.
+    - How do I train my dog?
+    - Explain the concept of quantum physics.
+    - What's the recipe for spaghetti carbonara?
+    - Can you recommend a good movie to watch?
+    - How can I improve my time management skills?
+    - What's the tallest mountain in the world?
+    - Teach me how to do a handstand.
+    - What's the history of the Eiffel Tower?
+    - How do I bake a cheesecake?
+    - What's the difference between a crocodile and an alligator?
+    - Tell me a story.
+    - What's the capital of Japan?
+    - How do I grow tomatoes in my garden?
+    - Can you suggest a workout routine?
+    - What's the best way to meditate?
+    - Explain the theory of evolution.
+    - How can I make a paper airplane?
+    - What's the process of making chocolate?
+    - How do I write a resume?
+    - Tell me about the solar system.
+    - What's the formula for calculating area?
+    - Can you recommend a good podcast?
+    - Explain the concept of artificial intelligence.
+    - What's the history of the Great Wall of China?
+    - How do I start a small business?
+    - What's the recipe for a classic margarita?
+    - How does photosynthesis work?
+    - Can you suggest ways to reduce stress?
+    - What's the distance from Earth to the Moon?
+    - How do I paint a sunset?
+    - Tell me about the life of Leonardo da Vinci.
+    - What's the speed of light?
+    - How do I tie a tie?
+    - Explain the Big Bang theory.
+    - What's the tallest tree in the world?
+    - Can you recommend a good workout playlist?
+    - How do I make a paper boat?
+    - What's the history of the Statue of Liberty?
+    - How does electricity work?
+    - Tell me about famous inventors.
+    - What's the process of making glass?
+    - How do I plan a budget?
+    - Explain the concept of supply and demand.
+    - What's the longest river in the world?
+    - How do I make a perfect cup of coffee?
+    - Can you book a flight for me?
+    - I need to schedule a doctor's appointment.
+    - How do I bake a chocolate cake?
+    - Can you recommend a good book to read?
+    - What's the latest fashion trend?
+    - I'm looking for a new laptop. Any suggestions?
+    - Teach me how to play the guitar.
+    - What's the best way to learn a new language?
+    - How can I improve my time management skills?
+    - What are some effective study techniques?
+    - Can you help me find a local event happening this weekend?
+    - I'm interested in home gardening. Any tips for beginners?
+    - What's the process for applying for a visa?
+    - Can you suggest some fun indoor activities for kids?
+    - How do I fix a leaking faucet?
+    - Tell me about some hiking trails in my area.
+    - What are the benefits of meditation?
+    - I want to start a blog. How should I begin?
+    - Are there any art classes available in this city?
+    - How can I train my dog to do tricks?
+
+
+
+
+
+
+
