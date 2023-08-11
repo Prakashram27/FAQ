@@ -1,4 +1,4 @@
-FROM python:3.8.17 AS BASE
+FROM python: 3.9.7. AS BASE
 
 RUN apt-get update \
     && apt-get --assume-yes --no-install-recommends install \
