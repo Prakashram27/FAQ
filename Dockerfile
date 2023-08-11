@@ -10,13 +10,11 @@ RUN apt-get update \
         vim
 
 
-
+RUN pip install rasa -r requirements.txt
 WORKDIR /app
 
 # upgrade pip version
 RUN pip install --no-cache-dir --upgrade pip
-
-RUN pip install -r requirements.txt
 
 RUN pip install rasa
 
