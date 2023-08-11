@@ -16,6 +16,9 @@ WORKDIR /app
 # upgrade pip version
 RUN pip install --no-cache-dir --upgrade pip
 
+
+RUN pip install rasa beautifulsoup4
+
 RUN pip install rasa
 
 ADD config.yml config.yml
