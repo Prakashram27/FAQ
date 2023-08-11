@@ -16,7 +16,7 @@ WORKDIR /app
 # upgrade pip version
 RUN pip install --no-cache-dir --upgrade pip
 
-RUN pip install rasa -r requirements.txt
+RUN pip install -r requirements.txt
 
 RUN pip install rasa
 
